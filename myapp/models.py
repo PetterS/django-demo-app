@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class MyModel(models.Model):
+
+	data = models.IntegerField()
+
+	class Meta:
+		permissions = (
+			('can_smell', 'Can smell MyModel'),
+		)
