@@ -6,5 +6,5 @@ class MyModel(models.Model):
 
 	class Meta:
 		permissions = (
-			('can_smell', 'Can smell MyModel'),
+			('can_hear', 'Can hear MyModel'),
 		)
